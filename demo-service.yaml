@@ -15,6 +15,7 @@ spec:
       containers:
       - name: demo-service
         image: cpretzer/flux-demo-service:0.1.2
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
 
