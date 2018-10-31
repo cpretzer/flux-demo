@@ -11,12 +11,12 @@ spec:
         name: demo-service
         app: weather-demo
         component: demo
-      spec:
-        containers:
-        - name: demo-service
-          image: cpretzer/flux-demo-service:0.1.0
-          ports:
-          - containerPort: 8080
+    spec:
+      containers:
+      - name: demo-service
+        image: cpretzer/flux-demo-service:0.1.1
+        ports:
+        - containerPort: 8080
 
 ---
 
