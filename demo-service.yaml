@@ -1,0 +1,33 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: demo-service
+spec:
+  minReadySeconds: 5
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: demo-service
+        app: weather-demo
+        component: demo
+      spec:
+        containers:
+        - name: demo-service
+          image: cpretzer/flux-demo-service:0.1.0
+          ports:
+          - containerPort: 8080
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-service
+spec:
+  ports:
+    - port: 8080
+  selector:
+    name: demo-service
+    app: weather-demo
+    component: demo
