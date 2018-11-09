@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"creationTimestamp":null,"labels":{"app":"weather","component":"demo"},"name":"weather-service","namespace":"demo","selfLink":"/api/v1/namespaces/demo/services/weather-service"},"spec":{"externalTrafficPolicy":"Cluster","ports":[{"name":"http","port":8080,"protocol":"TCP","targetPort":8080}],"selector":{"app":"weather","component":"demo"},"sessionAffinity":"None","type":"NodePort"}}
+  creationTimestamp: null
+  labels:
+    app: weather
+    component: demo
+  name: weather-service
+  selfLink: /api/v1/namespaces/demo/services/weather-service
+spec:
+  externalTrafficPolicy: Cluster
+  ports:
+  - name: http
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: weather
+    component: demo
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
