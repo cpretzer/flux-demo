@@ -9,6 +9,7 @@ metadata:
     app: weather
     component: demo
   name: weather-service
+  namespace: demo
   selfLink: /api/v1/namespaces/demo/services/weather-service
 spec:
   externalTrafficPolicy: Cluster

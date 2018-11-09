@@ -6,6 +6,7 @@ metadata:
     app: weather
     component: demo
   name: weather
+  namespace: demo
   selfLink: /apis/extensions/v1beta1/namespaces/demo/deployments/weather
 spec:
   replicas: 1

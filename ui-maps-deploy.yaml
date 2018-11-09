@@ -8,6 +8,7 @@ items:
       app: poc-ui
       component: demo
     name: poc-ui
+    namespace: demo
   spec:
     replicas: 1
     selector:
@@ -58,6 +59,7 @@ items:
       app: maps
       component: demo
     name: maps
+    namespace: demo
     selfLink: /apis/extensions/v1beta1/namespaces/demo/deployments/maps
   spec:
     replicas: 1

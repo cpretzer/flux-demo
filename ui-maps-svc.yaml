@@ -7,6 +7,7 @@ items:
       app: poc-ui
       component: demo
     name: poc-ui
+    namespace: demo
     selfLink: /api/v1/namespaces/demo/services/poc-ui
   spec:
     externalTrafficPolicy: Cluster
@@ -29,6 +30,7 @@ items:
       app: maps
       component: demo
     name: maps-service
+    namespace: demo
     selfLink: /api/v1/namespaces/demo/services/maps-service
   spec:
     externalTrafficPolicy: Cluster
