@@ -28,10 +28,10 @@ spec:
       containers:
       - env:
         - name: WUNDERGROUND_KEY
-            valueFrom:
-              secretKeyRef:
-                name: wunderground-service-secret
-                key: WUNDERGROUND_KEY
+          valueFrom:
+            secretKeyRef:
+              name: wunderground-service-secret
+              key: WUNDERGROUND_KEY
         - name: WUNDERGROUND_URL
           value: https://api.wunderground.com/api/%v
         - name: WUNDERGROUND_FORECAST_PATH
