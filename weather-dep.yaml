@@ -37,7 +37,7 @@ spec:
           value: https://api.wunderground.com/api/%v
         - name: WUNDERGROUND_FORECAST_PATH
           value: /forecast/q/%v,%v/json
-        image: cpretzer/wunderground-service:0.1.1
+        image: cpretzer/wunderground-service:0.1.2
         imagePullPolicy: Always
         name: weather
         ports:
